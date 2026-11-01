@@ -1,6 +1,6 @@
 # wred-ratelimit
 
-Async per-handler quotas using `limits`. Python 3.11+, Wred 0.13–0.14.
+Async per-handler quotas using `limits`. Python 3.11+, Wred 0.13–0.15.
 
 ```sh
 pip install 'wred-ratelimit[redis]'
@@ -122,6 +122,6 @@ limits async storage via `Limiter(storage=...)`; validate that topology separate
 
 ## Extension compatibility
 
-Follows the [Wred extension contract v1](https://github.com/wred-asgi/.github/blob/main/EXTENSIONS.md).
+Follows the [Wred extension contract v1.1](https://github.com/wred-asgi/.github/blob/main/EXTENSIONS.md).
 Keep `@app.route` outermost for
 route decorators; register routes on the inner Wred app when using ASGI wrappers.
