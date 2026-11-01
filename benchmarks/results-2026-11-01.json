@@ -1,0 +1,104 @@
+[
+  {
+    "workers": 4,
+    "concurrency": 25,
+    "requests": 1000000,
+    "identities": 10000,
+    "quota": 25,
+    "strategy": "moving",
+    "timeout": 0.5,
+    "namespace": "wred-benchmark-ce726911dbe448ffa3ff416040f454ce",
+    "elapsed_seconds": 23.479,
+    "requests_per_second": 42591,
+    "latency_ms": {
+      "p50": 2.39,
+      "p95": 3.71,
+      "p99": 3.77
+    },
+    "statuses": {
+      "200": 250000,
+      "429": 750000
+    },
+    "expected_allowed": 250000,
+    "quota_correct": true,
+    "redis_version": "8.0.5",
+    "redis_used_memory_delta_bytes": 9231176,
+    "redis_peak_memory_bytes": 11374008
+  },
+  {
+    "workers": 4,
+    "concurrency": 25,
+    "requests": 1000000,
+    "identities": 100000,
+    "quota": 10,
+    "strategy": "moving",
+    "timeout": 0.5,
+    "namespace": "wred-benchmark-7b1170ba730e4497b675dab6d6eecc47",
+    "elapsed_seconds": 18.179,
+    "requests_per_second": 55008,
+    "latency_ms": {
+      "p50": 1.776,
+      "p95": 2.012,
+      "p99": 2.563
+    },
+    "statuses": {
+      "200": 1000000
+    },
+    "expected_allowed": 1000000,
+    "quota_correct": true,
+    "redis_version": "8.0.5",
+    "redis_used_memory_delta_bytes": 51016896,
+    "redis_peak_memory_bytes": 51947200
+  },
+  {
+    "workers": 4,
+    "concurrency": 25,
+    "requests": 1000000,
+    "identities": 10000,
+    "quota": 25,
+    "strategy": "fixed",
+    "timeout": 0.5,
+    "namespace": "wred-benchmark-5453cb19ab4344ebac6b6dd8997d2d47",
+    "elapsed_seconds": 38.131,
+    "requests_per_second": 26225,
+    "latency_ms": {
+      "p50": 4.412,
+      "p95": 4.551,
+      "p99": 4.677
+    },
+    "statuses": {
+      "200": 250000,
+      "429": 750000
+    },
+    "expected_allowed": 250000,
+    "quota_correct": true,
+    "redis_version": "8.0.5",
+    "redis_used_memory_delta_bytes": 2665056,
+    "redis_peak_memory_bytes": 5180400
+  },
+  {
+    "workers": 4,
+    "concurrency": 25,
+    "requests": 1000000,
+    "identities": 100000,
+    "quota": 10,
+    "strategy": "fixed",
+    "timeout": 0.5,
+    "namespace": "wred-benchmark-c67ca2ff1ff44be2bac3b204b56c9bc4",
+    "elapsed_seconds": 16.447,
+    "requests_per_second": 60800,
+    "latency_ms": {
+      "p50": 1.66,
+      "p95": 1.705,
+      "p99": 1.727
+    },
+    "statuses": {
+      "200": 1000000
+    },
+    "expected_allowed": 1000000,
+    "quota_correct": true,
+    "redis_version": "8.0.5",
+    "redis_used_memory_delta_bytes": 24610688,
+    "redis_peak_memory_bytes": 25639376
+  }
+]
