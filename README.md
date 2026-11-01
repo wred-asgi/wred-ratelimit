@@ -3,7 +3,7 @@
 Async per-handler quotas using `limits`. Python 3.11+, Wred 0.13.
 
 ```sh
-pip install '.[redis]'
+pip install 'wred-ratelimit[redis]'
 ```
 
 ```python
@@ -89,7 +89,7 @@ error reporting. Avoid identities as metric labels.
 Use `async with limiter` or `await limiter.aclose()` in the hosting application's
 resource lifecycle. Wred itself does not implement lifespan.
 
-Tests: `pip install -e '.[test,redis]'`, then `pytest`.
+Tests: `pip install 'wred-ratelimit[test,redis]'`, then `pytest`.
 Set `WRED_TEST_REDIS=redis://localhost:6379/15` to include real Redis tests.
 Use a dedicated test instance/database. Cross-process tests verify shared quotas
 for both strategies. The restart test starts its own disposable Redis and requires
